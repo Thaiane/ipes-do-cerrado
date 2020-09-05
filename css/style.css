@@ -11,3 +11,9 @@ img {
 ul {
   list-style: none;
 }
+
+body{
+  background-color: #faf6ed;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
