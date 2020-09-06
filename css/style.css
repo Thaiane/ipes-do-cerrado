@@ -88,3 +88,41 @@ body {
   margin-bottom: 5px;
   background: #FB5;
 }
+
+.ipe-list {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.ipe-list::-webkit-scrollbar {
+  width: 18px;
+}
+
+.ipe-list::-webkit-scrollbar-thumb {
+  background: #FB5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+}
+
+.ipe-list::-webkit-scrollbar-track {
+  background: #faf6ed;
+}
+
+.descricao-ipe {
+  grid-column: 3;
+}
+
+.descricao-ipe section {
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: #FB5;
+  grid-column: 1 / 5;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
