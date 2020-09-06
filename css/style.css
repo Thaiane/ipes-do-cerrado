@@ -59,8 +59,32 @@ body {
 
 .titulo {
   font-size: 6rem;
+  font-family: 'Playfair Display SC', Georgia;
   line-height: 1;
   font-weight: 400;
   margin-bottom: 1rem;
   grid-column: 1 / 4;
+}
+
+.ipes p {
+  font-family: Helvetica, Arial;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.ipes h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 1rem;
+  color: #E54;
+}
+
+.ipes h2::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  margin-bottom: 5px;
+  background: #FB5;
 }
