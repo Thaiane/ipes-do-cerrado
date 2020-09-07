@@ -57,7 +57,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.titulo {
+h1 {
   font-size: 6rem;
   font-family: 'Playfair Display SC', Georgia;
   line-height: 1;
@@ -159,12 +159,38 @@ body {
   background-color: #ffbb55;
 }
 
+.contact-pic {
+  grid-column: 2;
+  width: 200px;
+  height: 200px;
+}
+
+.contact-list {
+   grid-column: 3;
+ }
+
+.contact-list li {
+  margin-bottom: 1rem;
+  font-family: Helvetica, Arial;
+}
+
+.contact-list li::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #ffbb55;
+}
+
 footer {
   background-image: linear-gradient(to right, #ffbb55, #ffbb55, #ffbb55, #ffbb55, #ffbb55, #feb351, #feab4d, #fda34a, #fb9145, #f87e42, #f46a42, #ee5544);
   grid-column: 1 / 5;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
 }
