@@ -194,3 +194,35 @@ footer {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
 }
+
+@media (max-width: 700px) {
+
+  body{
+    grid-template-columns: 1fr;
+  }
+
+  .menu, .grid-section {
+    grid-column: 1;
+  }
+
+  .menu {
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+  }
+
+  .ipe-list {
+    grid-column: 1;
+  }
+
+  .faq, .contato, .contact-list {
+    grid-column: 1 / 3;
+  }
+}
