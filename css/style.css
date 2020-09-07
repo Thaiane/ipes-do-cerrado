@@ -25,7 +25,6 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-image: linear-gradient(to right, #ffbb55, #ffbb55, #ffbb55, #ffbb55, #ffbb55, #feb351, #feab4d, #fda34a, #fb9145, #f87e42, #f46a42, #ee5544);
-  /*background-image: linear-gradient(to right, #ffbb55, #ffb755, #ffb255, #ffae55, #ffaa55, #fea252, #fd9a4f, #fc924d, #f98449, #f67546, #f26544, #ee5544);*/
 }
 
 .menu ul {
@@ -116,6 +115,48 @@ body {
 
 .descricao-ipe section {
   margin-bottom: 3rem;
+}
+
+.faq-list {
+  grid-column: 2 / 4;
+}
+
+.faq-list dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: #ee5544;
+}
+
+.faq-list dd {
+  font-family: Helvetica, Arial;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
+
+.faq-list dt::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #ffbb55;
+}
+
+.ipes-florir-list ul {
+  list-style: none;
+}
+
+.ipes-florir-list li::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: .1rem;
+  background-color: #ffbb55;
 }
 
 footer {
