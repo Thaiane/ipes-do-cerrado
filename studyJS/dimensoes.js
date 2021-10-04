@@ -1,19 +1,4 @@
 // Dimensões
-
-const listaIpes = document.querySelector('.ipe-list');
-
-console.log(listaIpes);
-
-console.log(listaIpes.clientHeight); // height + padding
-console.log(listaIpes.offsetHeight); // height + padding + border
-console.log(listaIpes.scrollHeight); // height total, mesmo dentro de scroll
-
-console.log(listaIpes.offsetTop); // distânia entra o topo do elemento e o topo da página
-console.log(listaIpes.offsetLeft); // distância entre o canto esquerdo do elemento e o canto esquerdo da página
-
-console.log(listaIpes.getBoundingClientRect()); // Retorna vários valores de dimensões e distâncias do elemento
-// width é a mesma coisa
-
 const listaIpes = document.querySelector('.ipe-list');
 
 console.log(listaIpes);
@@ -47,4 +32,13 @@ if(small.matches) {
     console.log('Tela menor que 600px')
 } else {
     console.log('Tela maior que 600px')
+}
+
+// Usando matchMedia e setClass
+
+const browserSmall = window.matchMedia('(max-width: 720px)').matches;
+
+if (browserSmall) {
+    const menu = document.querySelector('.menu');
+    menu.classList.add('menu-mobile');
 }
